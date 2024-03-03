@@ -25,7 +25,7 @@ export async function POST(request) {
       return NextResponse.json({ error: "File not present" });
     }
 
-    //  const buffer = Buffer.from(await file.arrayBuffer());
+    const buffer = Buffer.from(await file.arrayBuffer());
     const fileName = await uploadFileToS3(file.name);
     return NextResponse.json({ success: "Hello got file" });
   } catch (error) {
