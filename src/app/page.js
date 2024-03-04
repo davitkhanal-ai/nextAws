@@ -7,7 +7,7 @@ import DisplayS3File from "@/app/api/viewFile/view";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <DisplayS3File />
+      {/* <DisplayS3File /> */}
       <S3UploadForm />
     </main>
   );
